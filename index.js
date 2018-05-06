@@ -18,7 +18,7 @@ function currentLine(line) {
   if (line.length > 0) {
     var newArray = []
     for (var i = (line.length - 1); i >= 0; --i) {
-      newArray.unshift(` ${i + 1}. ${line[i]}`)
+      newArray.unshift(` ${i}. ${line[i]}`)
     }
     return `The line is currently:${newArray}`
   } else {
