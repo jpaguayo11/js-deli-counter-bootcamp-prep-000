@@ -17,7 +17,7 @@ function nowServing (katzDeliLine) {
 function currentLine(line) {
   if (line.length > 0) {
     var newArray = []
-    for (var i = (line.length); i >= 0; --i) {
+    for (var i = (line.length); i > 0; --i) {
       newArray.unshift(` ${i}. ${line[i]}`)
     }
     return `The line is currently:${newArray}`
